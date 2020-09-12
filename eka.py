@@ -59,7 +59,7 @@ sn.heatmap(cm, cmap=plt.cm.Blues, annot=True, fmt='.0f', ax=ax,
            yticklabels=enc.inverse_transform([0,1,2,3]))
 plt.xlabel('Predicted')
 plt.ylabel('True')
-plt.xticks(roration=0)
+plt.xticks(rotation=0)
 plt.show() 
 
 
