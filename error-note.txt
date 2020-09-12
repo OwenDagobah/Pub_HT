@@ -1,0 +1,28 @@
+Python 3.7.6 (default, Jan  8 2020, 13:42:34) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 7.18.1 -- An enhanced Interactive Python.
+
+runfile('/Users/outi/Desktop/harkat/eka.py', wdir='/Users/outi/Desktop/harkat')
+Traceback (most recent call last):
+
+  File "/Users/outi/Desktop/harkat/eka.py", line 40, in <module>
+    model.fit(X_train, y_train)
+
+  File "/Users/outi/opt/anaconda3/envs/tf-env/lib/python3.7/site-packages/sklearn/linear_model/_logistic.py", line 1344, in fit
+    accept_large_sparse=solver != 'liblinear')
+
+  File "/Users/outi/opt/anaconda3/envs/tf-env/lib/python3.7/site-packages/sklearn/base.py", line 432, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+
+  File "/Users/outi/opt/anaconda3/envs/tf-env/lib/python3.7/site-packages/sklearn/utils/validation.py", line 72, in inner_f
+    return f(**kwargs)
+
+  File "/Users/outi/opt/anaconda3/envs/tf-env/lib/python3.7/site-packages/sklearn/utils/validation.py", line 812, in check_X_y
+    check_consistent_length(X, y)
+
+  File "/Users/outi/opt/anaconda3/envs/tf-env/lib/python3.7/site-packages/sklearn/utils/validation.py", line 256, in check_consistent_length
+    " samples: %r" % [int(l) for l in lengths])
+
+ValueError: Found input variables with inconsistent numbers of samples: [4364, 1092]
+
