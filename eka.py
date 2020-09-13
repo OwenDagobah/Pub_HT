@@ -29,7 +29,7 @@ scaler = preprocessing.StandardScaler()
 X_scaled = scaler.fit_transform(X) #Scales the tables original values.
 #Average is is 0 and standard deviation is 1.
 
-#New varables
+#New variables
 #NOTE: The correct order is defined at the sklearn documentation.
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2)
 #datasize 20%
@@ -37,7 +37,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2)
 #Defining machine learning model
 model = linear_model.LogisticRegression(multi_class='multinomial', solver='newton-cg')
 
-#Fit th model according to the given training data
+#Fit the model according to the given training data
 model.fit(X_train, y_train)
 #Predict class labels for sambles in X.
 df['Predict'] = enc.inverse_transform(model.predict(X_scaled))
